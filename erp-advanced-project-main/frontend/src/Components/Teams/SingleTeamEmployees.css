@@ -1,0 +1,83 @@
+.single-team-employee-card .single-team-employee-card-image img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.single-team-employee-card .single-team-employee-card-image {
+  z-index: 2;
+}
+
+.single-team-employee-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.single-team-employee-card .single-team-employee-card-body {
+  text-align: center;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px 5px 0 0;
+  padding: 4rem 1rem 1rem 1rem;
+  margin-top: -3rem;
+  z-index: 1;
+  width: 100%;
+}
+
+.single-team-employee-card .single-team-employee-card-body h3 {
+  color: var(--primary-color);
+  width: 100%;
+}
+
+.single-team-employee-card .single-team-employee-card-body p {
+  width: 100%;
+}
+
+.single-team-employee-card .single-team-employee-card-body p span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.2rem;
+  color: var(--secondary-color);
+}
+
+.single-team-employee-card .single-team-employee-card-footer {
+  width: 100%;
+  text-align: center;
+}
+
+.single-team-employee-card .single-team-employee-card-footer span {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+}
+
+.single-team-employee-card .single-team-employee-card-footer .active-status {
+  background-color: var(--success-color);
+  border: 2px solid var(--success-color);
+  border-top: none;
+  color: var(--white-color);
+}
+
+.single-team-employee-card .single-team-employee-card-footer .inactive-status {
+  background-color: var(--danger-color);
+  border: 2px solid var(--danger-color);
+  border-top: none;
+  color: var(--white-color);
+}
+
+@media (max-width: 450px) {
+  .single-team-employee-card .single-team-employee-card-body {
+    font-size: 0.8rem;
+    padding: 4rem 0.2rem 0.2rem 0.2rem;
+  }
+
+  .single-team-employee-card .single-team-employee-card-body h3 {
+    font-size: 0.8rem;
+  }
+
+  .single-team-employee-card .single-team-employee-card-footer span {
+    padding: 0.5rem;
+  }
+}

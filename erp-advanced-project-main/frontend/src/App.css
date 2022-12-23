@@ -1,0 +1,325 @@
+/**
+Google Font Imported
+ */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+html {
+  --primary-color: #0097a4;
+  --secondary-color: #133f4c;
+  --link-color: #25aba8;
+  --white-color: #f3f6fb;
+  --success-color: #00873d;
+  --danger-color: #d6001c;
+  --edit-color: #e57e17;
+}
+
+/**
+Reset Default Values
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.55rem;
+  line-height: 1.3;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+}
+
+/**
+Tabs Styling
+ */
+
+.react-tabs__tab-list {
+  padding-left: 1rem !important;
+  display: flex;
+  justify-content: center;
+  border-bottom: none !important;
+}
+
+.react-tabs__tab:focus:after {
+  background: none !important;
+}
+
+.react-tabs__tab--selected {
+  background: var(--secondary-color) !important;
+  color: var(--white-color) !important;
+}
+
+.react-tabs__tab:first-child {
+  border-radius: 2rem 0 0 2rem;
+}
+
+.react-tabs__tab:last-child {
+  border-radius: 0 2rem 2rem 0;
+}
+
+.react-tabs__tab-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  width: 200px;
+  border: 1px solid var(--secondary-color) !important;
+}
+
+/**
+Forms Design
+ */
+
+#unassigned-select {
+  margin-bottom: 1rem;
+}
+
+.form-group p {
+  margin-top: -10px;
+  font-size: 0.8rem;
+  color: red;
+}
+
+.form-section {
+  padding: 0 1rem;
+  background-color: var(--white-color);
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.form .btn:hover {
+  transform: scale(0.98);
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form-group select {
+  border: 1px solid #e6e6e6;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error:focus {
+  outline: 1px solid red;
+}
+
+.form-valid {
+  border: 1px solid #e6e6e6;
+}
+
+.form-valid:focus {
+  outline: 1px solid var(--link-color);
+}
+
+.error-msg {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24 !important;
+}
+
+.succeed-msg {
+  color: #004085 !important;
+  background-color: #cce5ff;
+  border: 1px solid #b8daff;
+}
+
+.succeed-msg,
+.error-msg {
+  font-size: 1rem;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0.8rem;
+}
+
+.heading {
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.active {
+  width: fit-content;
+  color: var(--secondary-color) !important;
+  border-bottom: 3px solid var(--secondary-color) !important;
+}
+
+.dark-btn {
+  background-color: var(--secondary-color);
+}
+
+.add-btn {
+  background-color: var(--success-color);
+}
+.show-btn{
+  background-color: var(--primary-color);
+}
+
+.delete-btn {
+  background-color: var(--danger-color);
+}
+
+.edit-btn {
+  background-color: var(--edit-color);
+}
+
+.disabled-btn {
+  background-color: lightgray;
+}
+
+.dark-btn:hover {
+  color: var(--secondary-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.disabled-btn:hover {
+  background-color: lightgray;
+  color: var(--danger-color);
+  border: 1px solid transparent;
+}
+
+.edit-btn:hover {
+  color: var(--edit-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--edit-color);
+}
+
+.delete-btn:hover {
+  color: var(--danger-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--danger-color);
+}
+
+.add-btn:hover {
+  color: var(--success-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--success-color);
+}
+
+.content-container {
+  padding: 0 0 0 216px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.no-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .react-tabs__tab-list li {
+    font-size: 0.8rem;
+    width: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  .form-section {
+    width: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-container {
+    padding-left: 66px;
+  }
+  .active {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .react-tabs__tab-list li {
+    font-size: 0.5rem;
+    width: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .form-section {
+    width: 250px;
+  }
+
+  .heading {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .heading p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,49 @@
+.edit-image-form {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 150px;
+}
+
+.edit-image-form img {
+  display: block;
+  width: inherit;
+  border-radius: 50%;
+}
+
+.edit-image-form input {
+  display: none;
+}
+
+.edit-image-form label {
+  display: flex;
+  color: var(--link-color);
+  align-items: center;
+  column-gap: 0.2rem;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.form-control[type="file"]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+
+.form-control[type="file"] {
+  overflow: hidden;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}

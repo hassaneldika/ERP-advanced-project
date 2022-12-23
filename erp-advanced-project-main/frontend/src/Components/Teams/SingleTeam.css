@@ -1,0 +1,133 @@
+.single-team-container {
+  background-color: var(--white-color);
+  padding: 1rem 1rem 1rem 0;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.single-team-employees-container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-items: center;
+  justify-content: center;
+  padding: 2rem 0 2rem 1rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+.single-team-projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  justify-content: center;
+  padding: 2rem 0 2rem 1rem;
+  gap: 1rem;
+}
+
+.single-team-projects-container div {
+  border: 2px solid var(--secondary-color);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.single-team-projects-container div h3 {
+  margin: 0;
+}
+
+.single-team-projects-container div a {
+  border-radius: 5px;
+}
+
+.single-team-employees-container a {
+  width: 300px;
+}
+
+.single-team-manage {
+  display: flex;
+  column-gap: 1rem !important;
+}
+
+.single-team-manage .btn {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.single-team-container header .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  column-gap: 0.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.single-team-container header .description div {
+  display: flex;
+  align-items: center;
+}
+
+.single-team-container header {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+.single-team-container header h2 {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 1250px) {
+  .single-team-employees-container {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+@media (max-width: 950px) {
+  .single-team-employees-container {
+    grid-template-columns: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .single-team-container header {
+    font-size: 1rem;
+    padding-left: 1rem;
+    text-align: center;
+  }
+
+  .single-team-container {
+    margin: 10px 10px 10px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .single-team-container header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .single-team-container header .description {
+    align-items: center;
+  }
+
+  .single-team-employees-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 0 2rem 0;
+  }
+
+  .single-team-employees-container a {
+    width: 200px;
+  }
+
+  .single-team-manage .btn {
+    padding: 0.3rem;
+    border-radius: 5px;
+  }
+
+  .single-team-container {
+    padding: 0.3rem;
+  }
+}

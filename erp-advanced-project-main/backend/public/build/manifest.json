@@ -1,0 +1,26 @@
+{
+  "resources/js/src/assets/images/logo.png": {
+    "file": "assets/logo.00459f54.png",
+    "src": "resources/js/src/assets/images/logo.png"
+  },
+  "resources/js/src/assets/images/login-image.png": {
+    "file": "assets/login-image.38c2ee88.png",
+    "src": "resources/js/src/assets/images/login-image.png"
+  },
+  "resources/js/app.jsx": {
+    "file": "assets/app.a557e634.js",
+    "src": "resources/js/app.jsx",
+    "isEntry": true,
+    "css": [
+      "assets/app.de89eb5c.css"
+    ],
+    "assets": [
+      "assets/logo.00459f54.png",
+      "assets/login-image.38c2ee88.png"
+    ]
+  },
+  "resources/js/app.css": {
+    "file": "assets/app.de89eb5c.css",
+    "src": "resources/js/app.css"
+  }
+}

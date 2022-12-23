@@ -1,0 +1,184 @@
+.header {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard .header .form-input-div{
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard .header .form-input-div input{
+ width: 100%;
+ padding: 10px;
+  margin-right: 1rem;
+}
+
+.dashboard .header .form-input-div > div{
+  margin-bottom: 0;
+}
+
+.header button {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+}
+
+.header h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dashboard {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.dashboard a:visited {
+  color: var(--white-color);
+}
+
+.dashboard a:hover {
+  color: var(--primary-color);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard .btn {
+  margin-top: 0;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+.dashboard .flex-btn {
+  display: flex;
+  justify-content: space-evenly;
+  height: max-content;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: var(--white-color);
+}
+
+tr {
+  color: var(--secondary-color);
+}
+
+th {
+  background: var(--secondary-color);
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+td,
+th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media (max-width: 950px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid var(--primary-color);
+    background-color: white;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    display: flex;
+    border: 1px solid #eee;
+    align-items: center;
+  }
+
+  td:before {
+    text-align: left;
+    /* Now like a table header */
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 30%;
+    padding-right: 10px;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  .table-teams .btn {
+    width: 70%;
+  }
+
+  /*
+  Label the data
+  */
+  .table-teams td:nth-of-type(1):before {
+    content: "Name";
+  }
+
+  .table-teams td:nth-of-type(2):before {
+    content: "Team Size";
+  }
+
+  .table-teams td:nth-of-type(3):before {
+    content: "Created At";
+  }
+
+  .table-teams td:nth-of-type(4):before {
+    content: "Updated At";
+  }
+
+  .table-teams td:nth-of-type(5):before {
+    content: "Manage";
+  }
+
+  .flex-btn {
+    column-gap: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  td {
+    justify-content: space-between;
+  }
+
+  .header h2 {
+    font-size: 1rem;
+  }
+
+  .header button {
+    padding: 0.5rem;
+  }
+}

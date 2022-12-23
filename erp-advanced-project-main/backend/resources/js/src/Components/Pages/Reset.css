@@ -1,0 +1,24 @@
+.reset{
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.reset input  {
+    flex: calc(50% - 0.5rem);
+}
+
+.reset a:visited {
+    color: var(--white-color);
+}
+
+.reset a {
+    border-radius: 5px;
+    flex: calc(50% - 0.5rem);
+    padding: 10px;
+    text-align: center;
+    margin: 16px 0 10px 0;
+}
+
+.reset a:hover {
+    color: var(--secondary-color);
+}

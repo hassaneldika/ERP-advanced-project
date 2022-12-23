@@ -1,0 +1,6 @@
+.rating div .MuiSlider-root {
+  width: 99%;
+}
+.rating {
+  margin: 0.5rem 0;
+}
